@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+
+	<persistence-unit name="JAVA4_ASM_NHOM4">
+		<class>com.fpoly.model.Bill</class>
+		<class>com.fpoly.model.BillDetail</class>
+		<class>com.fpoly.model.Category</class>
+		<class>com.fpoly.model.Product</class>
+		<class>com.fpoly.model.User</class>
+		<class>com.fpoly.model.DoanhThu</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:sqlserver://localhost;database=JAVA4_ASM_NHOM4" />
+			<property name="javax.persistence.jdbc.user" value="sa" />
+			<property name="javax.persistence.jdbc.password"
+				value="123456" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+		</properties>
+		
+		
+		<!-- <properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:sqlserver://demochoanhphuxem.database.windows.net;database=JAVA4_ASM_NHOM4" />
+			<property name="javax.persistence.jdbc.user" value="demochoanhphuxem" />
+			<property name="javax.persistence.jdbc.password"
+				value="12345678aA@" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+		</properties> -->
+		
+	</persistence-unit>
+</persistence>
